@@ -26,7 +26,7 @@ This plugin will help you to add Christmas mood and falling snowflakes with uniq
 
 # Contributing
 
-You can contribute or see sources to this plugin on [GitHub](https://github.com/fnpen/chrismas-snow-3d).
+You can contribute or see sources to this plugin on [GitHub](https://github.com/fnpen/christmas-snow-3d).
 
 == Installation ==
 

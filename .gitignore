@@ -2,6 +2,7 @@
 internal*
 wwwroot
 vendor
+*.zip
 
 # Logs
 logs
