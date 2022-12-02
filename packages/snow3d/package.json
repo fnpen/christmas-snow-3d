@@ -1,0 +1,32 @@
+{
+  "name": "christmas-snow-3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/snow3d.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "ngrok": "/Applications/ngrok http -host-header=rewrite -region=eu -hostname=snow3d.eu.ngrok.io snow3d.wp.loc:443"
+  },
+  "keywords": [
+    "christmas",
+    "show",
+    "snoflakes"
+  ],
+  "author": "Ilya Zolotov",
+  "license": "MIT",
+  "dependencies": {
+    "animejs": "3.2.1",
+    "three": "0.146.0"
+  },
+  "devDependencies": {
+    "@statoscope/webpack-plugin": "^5.24.0",
+    "@types/animejs": "3.1.6",
+    "@types/three": "0.144.0",
+    "@wordpress/scripts": "24.4.0",
+    "ts-loader": "9.4.1",
+    "webpack-glsl-loader": "1.0.1"
+  },
+  "jsdelivr": "build/snow3d.js",
+  "unpkg": "build/snow3d.js"
+}

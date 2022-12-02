@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "[**/themes/**]": {
+    "editor.formatOnSave": false
+  },
+
+  "[php]": {
+    "editor.defaultFormatter": "wongjn.php-sniffer",
+    "editor.formatOnSave": false
+  },
+
+  "phpSniffer.autoDetect": false
+}
