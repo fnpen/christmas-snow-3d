@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:       Chrismas Snow 3D
+ * Plugin Name:       Christmas Snow 3D
  * Plugin URI:        https://ilyazolotov.com/projects/christmas-snow-3d
- * Description:       Add chrismas mood to your site.
+ * Description:       Add christmas mood to your site.
  *
  * Text Domain:       christmas-snow-3d
  * 
@@ -16,10 +16,10 @@
  * Tested up to:      6.0.2
  * Requires PHP:      5.6
  *
- * @package           ChrismasSnow3d
+ * @package           ChristmasSnow3d
  */
 
-namespace ChrismasSnow3d;
+namespace ChristmasSnow3d;
 
 /**
  * Includes asset.

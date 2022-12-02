@@ -1,4 +1,4 @@
-=== Christmas Snow 3D - Snowfalling, Snowflake Effect and Chrismas mood ===
+=== Christmas Snow 3D - Snowfalling, Snowflake Effect and Christmas mood ===
 Contributors: fnpen
 Tags: christmas, snowflakes, snow, snow falling, winter
 Donate link: https://ilyazolotov.com/projects/christmas-snow-3d
