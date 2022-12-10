@@ -1,0 +1,19 @@
+{
+  "name": "wp-christmas-snow-3d",
+  "version": "1.0.1",
+  "description": "The plugin adds Christmas mood and falling snowflakes with unique and smooth experience and realistic animation.",
+  "scripts": {
+    "copy": "cpy ./../snow3d/build ./",
+    "build": "npm run copy"
+  },
+  "keywords": [
+    "christmas",
+    "show",
+    "snoflakes"
+  ],
+  "author": "Ilya Zolotov",
+  "license": "MIT",
+  "dependencies": {
+    "cpy-cli": "^4.2.0"
+  }
+}

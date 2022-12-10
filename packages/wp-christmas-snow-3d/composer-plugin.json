@@ -1,0 +1,10 @@
+{
+  "name": "fnpen/christmas-snow-3d",
+  "description": "The plugin adds Christmas mood and falling snowflakes with unique and smooth experience and realistic animation.",
+  "type": "wordpress-plugin",
+  "license": "ISC",
+  "version": "1.0.1",
+  "require": {
+    "php": ">=7.0"
+  }
+}
