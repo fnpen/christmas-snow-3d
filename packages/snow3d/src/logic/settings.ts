@@ -42,7 +42,7 @@ export const setSettings = (settings: Settings) => {
     }, 3000);
   }
 
-  updateScene();
+  updateScene({ opacity: 0 });
 
   if (!currentSettings.paused && !variables.container) {
     variables.container = createRootElement();

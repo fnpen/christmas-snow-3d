@@ -6,7 +6,8 @@
   "scripts": {
     "build": "wp-scripts build",
     "start": "wp-scripts start",
-    "ngrok": "/Applications/ngrok http -host-header=rewrite -region=eu -hostname=snow3d.eu.ngrok.io snow3d.wp.loc:443"
+    "ngrok": "/Applications/ngrok http -host-header=rewrite -region=eu -hostname=wp0.eu.ngrok.io snow3d.wp.loc:443",
+    "ngrok2": "/Applications/ngrok http -host-header=rewrite -region=eu -hostname=wp1.eu.ngrok.io snow3d.wp.loc:443"
   },
   "keywords": [
     "christmas",

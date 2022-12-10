@@ -58,5 +58,5 @@ export const init = async (settings: Settings = {}): Promise<void> => {
 
   queueRender();
 
-  window.addEventListener('resize', updateScene);
+  window.addEventListener('resize', () => updateScene({ opacity: 1 }));
 };

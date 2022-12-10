@@ -5,8 +5,9 @@ import { getSettings } from './settings';
 import { getWindowDimensions, randomInt, randomIntMax } from './utils';
 import { variables } from './variables';
 
-export const updateScene = () => {
-  const { particleLevel, speed, paused } = getSettings();
+export const updateScene = async ({ opacity }) => {
+  const { particleLevel, speed, paused, stoped } = getSettings();
+
   if (paused) {
     return;
   }
@@ -33,7 +34,7 @@ export const updateScene = () => {
 
       velocities.push(...calcVelocity(speed, randomInt(-65, 65), randomIntMax(270)));
 
-      colors.push(0, 0);
+      colors.push(opacity, 0);
     }
 
     const colorAttribute = new Float32BufferAttribute(colors, 2);

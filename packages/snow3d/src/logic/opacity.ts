@@ -17,7 +17,6 @@ export const setOpacity = (opacity: number): void => {
 
       const particleNum = opacity.count / 2;
       for (let i = 0; i < particleNum; i++) {
-        let s = i * 2;
         opacity.setX(i, opacityTarget.opacity);
       }
 
