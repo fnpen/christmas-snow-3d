@@ -41,13 +41,3 @@ window['SNOW3D'] = {
   start: () => setSettings({ paused: false }),
   stop: () => setSettings({ paused: true }),
 };
-
-/**
-(() => {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://snow3d.wp.loc/wp-content/plugins/snow3d/build/index.js';    
-
-    document.head.appendChild(script);
-})();
- */
