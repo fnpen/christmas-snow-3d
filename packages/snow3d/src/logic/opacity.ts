@@ -15,6 +15,10 @@ export const setOpacity = (opacity: number): void => {
     update: () => {
       const opacity = variables.particles.geometry.attributes.opacity;
 
+      if (!opacity) {
+        return;
+      }
+
       const particleNum = opacity.count / 2;
       for (let i = 0; i < particleNum; i++) {
         opacity.setX(i, opacityTarget.opacity);
