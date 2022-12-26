@@ -5,12 +5,12 @@ import { updateScene } from './updateScene';
 import { variables } from './variables';
 
 let removeTimer;
+let redrawTimer;
 
 let defaultSettings = {
   speed: 50,
   particleLevel: 500,
   paused: false,
-  stoped: false,
 };
 
 export type Settings = Partial<typeof defaultSettings>;
@@ -20,6 +20,26 @@ let currentSettings = {
 };
 
 export const setSettings = (settings: Settings) => {
+  if (redrawTimer) {
+    clearTimeout(redrawTimer);
+    redrawTimer = undefined;
+  }
+
+  if (variables.container) {
+    setOpacity(0);
+
+    if (removeTimer) {
+      clearTimeout(removeTimer);
+      removeTimer = undefined;
+    }
+
+    removeTimer = setTimeout(() => {
+      variables.container.remove();
+      variables.container = undefined;
+      removeTimer = undefined;
+    }, 3000);
+  }
+
   currentSettings = {
     ...defaultSettings,
     ...(settings?.speed ? { speed: Number(settings.speed) } : {}),
@@ -27,38 +47,27 @@ export const setSettings = (settings: Settings) => {
     paused: settings?.paused || defaultSettings.paused,
   };
 
-  if (!settings?.paused && currentSettings.stoped) {
-    currentSettings.stoped = false;
-  }
+  if (!currentSettings.paused) {
+    redrawTimer = setTimeout(() => {
+      updateScene({ opacity: 0 });
+      setOpacity(1);
 
-  if (currentSettings.paused && variables.container) {
-    setOpacity(0);
+      redrawTimer = undefined;
+      if (removeTimer) {
+        clearTimeout(removeTimer);
+        removeTimer = undefined;
+      }
 
-    // TODO: remove async without timer.
-    removeTimer = setTimeout(() => {
-      currentSettings.stoped = true;
-      variables.container.remove();
-      variables.container = undefined;
-    }, 3000);
-  }
+      if (!variables.container) {
+        variables.container = createRootElement();
+        variables.container.appendChild(variables.renderer.domElement);
+        document.body.append(variables.container);
 
-  updateScene({ opacity: 0 });
+        cancelRender();
+        queueRender();
+      }
 
-  if (!currentSettings.paused && !variables.container) {
-    variables.container = createRootElement();
-    variables.container.appendChild(variables.renderer.domElement);
-    document.body.append(variables.container);
-
-    cancelRender();
-    queueRender();
-  }
-
-  if (!settings?.paused) {
-    if (removeTimer) {
-      clearTimeout(removeTimer);
-    }
-
-    setOpacity(1);
+    }, 500);
   }
 };
 

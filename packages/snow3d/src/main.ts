@@ -41,3 +41,6 @@ window['SNOW3D'] = {
   start: () => setSettings({ paused: false }),
   stop: () => setSettings({ paused: true }),
 };
+
+window.addEventListener('focus', window['SNOW3D'].start);
+window.addEventListener('blur', window['SNOW3D'].stop);
