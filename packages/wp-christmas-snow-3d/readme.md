@@ -55,6 +55,10 @@ Plugin uses WebGL, Three.JS underhood. Enable plugin, you do not need to adjust 
 
 == Changelog ==
 
+v1.0.2
+
+- Support up to latest WordPress 6.7.1
+
 v1.0.1
 
 - Fix issue with resizing

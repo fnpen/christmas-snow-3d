@@ -11,9 +11,9 @@
  *
  * Author:            Ilya Zolotov
  * Author URI:        https://ilyazolotov.com/
- * Version:           1.0.1
+ * Version:           1.0.2
  * Requires at least: 5.7
- * Tested up to:      6.0.2
+ * Tested up to:      6.7.1
  * Requires PHP:      5.6
  *
  * @package           ChristmasSnow3d
