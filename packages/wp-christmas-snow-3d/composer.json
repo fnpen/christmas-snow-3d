@@ -22,7 +22,7 @@
     "beautify": "phpcbf --standard=.phpcs.xml .",
     "svn-co": "svn checkout --depth immediates https://plugins.svn.wordpress.org/christmas-snow-3d ./../wp-svn",
     "svn-add": "cd ./../wp-svn && svn add --force trunk/*",
-    "svn-commit": "cd ./../wp-svn && svn ci -m 'Assets and Readme changes' --username fnpen",
+    "svn-commit": "cd ./../wp-svn && svn ci -m 'Readme update 1.0.2' --username fnpen",
     "svn-tag": "cd ./../wp-svn && svn cp trunk tags/1.0.1"
   },
   "config": {

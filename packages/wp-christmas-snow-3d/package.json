@@ -1,6 +1,6 @@
 {
   "name": "wp-christmas-snow-3d",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The plugin adds Christmas mood and falling snowflakes with unique and smooth experience and realistic animation.",
   "scripts": {
     "copy": "cpy ./../snow3d/build ./",
