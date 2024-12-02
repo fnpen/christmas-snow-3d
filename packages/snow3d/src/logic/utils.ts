@@ -13,9 +13,6 @@ export const getWindowDimensions = (): { innerWidth: number; innerHeight: number
 export const scrollHeight = (): number =>
   Number(document.documentElement.scrollHeight || document.body.scrollHeight);
 
-export const scrollPosition = (): number =>
-  Number(document.documentElement.scrollTop || document.body.scrollTop);
-
 export const randomInt = (min: number, max: number): number => {
   return min + Math.floor(Math.random() * (max - min + 1));
 };
